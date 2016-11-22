@@ -12,6 +12,7 @@ class WebhooksController < ApplicationController
     @webhook.region = params[:region]
     @webhook.city = params[:city]
     @webhook.save
+    render :nothing, :status => 200
   end
 
   # GET /webhooks
