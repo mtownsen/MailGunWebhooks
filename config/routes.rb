@@ -4,6 +4,6 @@ Rails.application.routes.draw do
     resources :webhooks do
     end
 
-    post 'webhook' => 'webhooks#webhook'
-    get 'webhook' => 'webhooks#webhook'
+    post 'open' => 'webhooks#webhook'
+    post 'click' => 'webhooks#webhook'
 end
